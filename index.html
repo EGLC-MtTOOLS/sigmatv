@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5; url=https://jurasdss.github.io/sigmatv/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        .hidden {
+            display: none;
+        }
+        .loading-circle {
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            border-top: 6px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('redirect-text').classList.remove('hidden');
+                document.getElementById('loading-circle').classList.add('hidden');
+            }, 3000); // Show text after 3 seconds
+        };
+    </script>
+</head>
+<body>
+    <div id="loading-circle" class="loading-circle"></div>
+
+    <p id="redirect-text" class="hidden">
+        If you are not redirected automatically, click <a href="https://jurasdss.github.io/sigmatv/">here</a>.
+    </p>
+</body>
+</html>
